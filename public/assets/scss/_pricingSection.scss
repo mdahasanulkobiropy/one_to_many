@@ -1,0 +1,120 @@
+@use "common" as *;
+
+.pricing-area {
+    padding: 150px 0;
+    background: #1d1d1d;
+
+    .pricing-title {
+        text-align: center;
+        margin-bottom: 82px;
+
+        h2 {
+            font-family: 'Manrope';
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 76px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.single-pricing {
+    padding: 0px 0px 37px 0px;
+    background: #272727;
+    border: 1px solid #383838;
+    border-radius: 18px;
+}
+
+.single-pricing-head {
+    padding-bottom: 29px;
+    padding-top: 26px;
+    padding-left: 38px;
+    border-radius: 18px 18px 0 0;
+    border-bottom: 1px solid #383838;
+
+    h3 {
+        font-family: 'Manrope';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+}
+
+.pricing-bg-color-black {
+    background: #1d1d1d;
+}
+
+.pricing-bg-color-pink {
+    background: #F36B7F;
+}
+
+.pricing-bg-color-green {
+    background: #70D18C;
+}
+
+.single-pricing-list {
+    margin-top: 74px;
+    padding-left: 38px;
+    margin-bottom: 51px;
+
+    ul {
+        box-sizing: border-box;
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 22px;
+
+            p {
+                font-family: 'Manrope';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+                color: #E5E5E5;
+            }
+        }
+    }
+}
+
+.single-pricing-button {
+    padding-left: 38px;
+    padding-right: 32px;
+
+    button {
+        width: 100%;
+        font-family: 'Manrope';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #1D1D1D;
+        border: 1px solid #383838;
+        border-radius: 54px;
+        padding: 12px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            background: #5162FE;
+        }
+    }
+}

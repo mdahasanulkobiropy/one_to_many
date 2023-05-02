@@ -1,0 +1,187 @@
+@use "common" as *;
+
+.schedule-area {
+    background-color: #1d1d1d;
+    // padding-bottom: 150px;
+
+}
+
+
+// slider head er scss
+.schedule-slider-item {
+    max-width: 670px;
+    width: 100%;
+
+    .schedule-slider-head {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #FFFFFF;
+        margin-bottom: 44px;
+
+
+        .slick-list {
+            padding: 0 !important;
+
+            // .slick-track {
+            //     .slick-current {
+            //         .head-item {
+            //             h3 {
+            //                 color: red;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+
+        .head-item {
+            margin-right: 40px;
+
+            h3 {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color: #5e5e5e;
+            }
+
+            p {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #5e5e5e;
+
+                span {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 28px;
+                    color: #5e5e5e;
+                }
+            }
+        }
+    }
+}
+
+.slick-current.head-item {
+    h3 {
+        color: #FFFFFF !important;
+    }
+
+    p {
+        color: #BFBFBF !important;
+
+        span {
+            color: #FFFFFF !important;
+        }
+    }
+}
+
+// ....................................
+.schedule-slider-content {
+
+
+    .schedule-slider-content-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 37px;
+
+        .schedule-slider-content-item-left {
+            max-width: 137px;
+            width: 100%;
+
+            p {
+                font-family: 'Manrope';
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                color: #BFBFBF;
+            }
+        }
+
+        .schedule-slider-content-item-right {
+            max-width: 445px;
+            width: 100%;
+
+            h3 {
+                font-family: 'Manrope';
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: 'Manrope';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #BFBFBF;
+            }
+        }
+    }
+}
+
+.schedule-single-slide {
+    position: relative;
+
+    .single-slider-bg-shape {
+        position: absolute;
+        left: 179px;
+        top: 19px;
+        z-index: 999;
+    }
+}
+
+.item-img {
+    z-index: 9999;
+}
+
+.schedule-head {
+    h2 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 76px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #BFBFBF;
+    }
+
+    button {
+        margin-top: 34px;
+        padding: 20px 40px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 130px;
+
+        &:hover {
+            background: #70d18c;
+            color: black;
+        }
+    }
+}

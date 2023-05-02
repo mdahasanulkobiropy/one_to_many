@@ -1,0 +1,279 @@
+@use "common" as *;
+
+.header-area {
+    background: #030309;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999999999999999999;
+}
+
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: 505px;
+        width: 100%;
+        justify-content: space-between;
+
+        li {
+            display: inline-block;
+            margin-left: 30px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                >a {
+                    color: #b91eb9;
+                }
+            }
+
+            a {
+                display: block;
+                font-family: newfont;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+
+            // 1st dropdown
+            &.has-dropdown {
+                position: relative;
+
+                >a {
+                    &:after {
+                        content: "\f107";
+                        font-family: $icon-font;
+                        font-weight: 400;
+                        margin-left: 5px;
+                    }
+                }
+
+                &:hover {
+                    >.sub-menu {
+                        visibility: visible;
+                        opacity: 1;
+                        top: 175%;
+                    }
+                }
+
+                // 1st sub-menu
+                .sub-menu {
+                    position: absolute;
+                    left: 0;
+                    top: 120%;
+                    width: 200px;
+                    background: #222;
+                    border-top: 2px solid #b91eb9;
+                    z-index: 99;
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition(0.3s);
+
+                    li {
+                        display: block;
+                        margin: 0;
+
+                        a {
+                            padding: 10px 20px;
+                            font-size: 14px;
+                            text-transform: capitalize;
+                        }
+
+                        &:hover {
+                            >a {
+                                background: #b91eb9;
+                                color: #fff;
+                            }
+                        }
+
+                        // 2nd dropdown
+                        &.has-dropdown {
+
+                            >a {
+                                position: relative;
+                                padding-right: 30px;
+
+                                &:after {
+                                    content: "\f105";
+                                    position: absolute;
+                                    right: 15px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+
+
+                            &:hover {
+                                >.sub-menu {
+                                    top: 0;
+                                    left: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.nav-menu-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .language {
+        margin-right: 28px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 30px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                >a {
+                    color: #b91eb9;
+                }
+            }
+
+            a {
+                display: block;
+                font-family: newfont;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+
+            // 1st dropdown
+            &.has-dropdown {
+                position: relative;
+
+                >a {
+                    &:after {
+                        content: "\f107";
+                        font-family: $icon-font;
+                        font-weight: 400;
+                        margin-left: 5px;
+                    }
+                }
+
+                &:hover {
+                    >.sub-menu {
+                        visibility: visible;
+                        opacity: 1;
+                        top: 175%;
+                    }
+                }
+
+                // 1st sub-menu
+                .sub-menu {
+                    position: absolute;
+                    left: 0;
+                    top: 120%;
+                    width: 100px;
+                    background: #222;
+                    border-top: 2px solid #b91eb9;
+                    z-index: 99;
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition(0.3s);
+
+                    li {
+                        display: block;
+                        margin: 0;
+
+                        a {
+                            padding: 10px 20px;
+                            font-size: 14px;
+                            text-transform: capitalize;
+                        }
+
+                        &:hover {
+                            >a {
+                                background: #b91eb9;
+                                color: #fff;
+                            }
+                        }
+
+                        // 2nd dropdown
+                        &.has-dropdown {
+
+                            >a {
+                                position: relative;
+                                padding-right: 30px;
+
+                                &:after {
+                                    content: "\f105";
+                                    position: absolute;
+                                    right: 15px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+
+
+                            &:hover {
+                                >.sub-menu {
+                                    top: 0;
+                                    left: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .nav-button {
+        button {
+            border: none;
+            padding: 10px 24px;
+            background: #2C2C2B;
+            border-radius: 23px;
+            font-family: newfont;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+
+            &:hover {
+                background: #AFD7B3;
+                color: #030309;
+            }
+        }
+    }
+}

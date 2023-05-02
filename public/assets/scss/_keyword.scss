@@ -1,0 +1,47 @@
+@use "common" as *;
+
+.keyword-area {
+    padding: 70px 0;
+    background: #1b1c1d;
+    border-top: 2px solid #8a8a8a;
+    border-bottom: 2px solid #8a8a8a;
+    z-index: 99999999999;
+}
+
+.keyword-layout {
+    width: 100%;
+    animation: slide 15s linear infinite;
+
+    .col {
+        font-family: 'newfont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+        color: #FFFFFF;
+        display: flex;
+        max-width: 450px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            margin-right: 12px;
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,109 @@
+@use "common" as *;
+
+.speaker-area {
+    padding-bottom: 150px;
+    background: #1d1d1d;
+}
+
+.speaker-head {
+    margin-bottom: 56px;
+
+    .speaker-title {
+        max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+
+        h2 {
+            font-family: 'Manrope';
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 76px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+
+    .speaker-sub-title {
+        max-width: 498px;
+        width: 100%;
+        margin: 0 auto;
+
+
+        p {
+            font-family: 'Manrope';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #BFBFBF;
+        }
+    }
+}
+
+
+
+.slick-track {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.custom-next-arrow {
+    position: absolute;
+    top: 60%;
+    right: -27px;
+    transform: translateY(-60%);
+    z-index: 11111;
+}
+
+.custom-prev-arrow {
+    position: absolute;
+    top: 60%;
+    left: -15px;
+    transform: translateY(-60%);
+    z-index: 11111;
+
+}
+
+.image {
+    padding: 12px;
+    position: relative;
+
+    img {
+        z-index: -1;
+    }
+
+}
+
+.speaker-info {
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999999;
+
+    h3 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}

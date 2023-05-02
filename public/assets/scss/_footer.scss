@@ -1,0 +1,41 @@
+@use "common" as *;
+
+
+.footer-area {
+    padding: 52px 0px;
+    background: #1d1d1d;
+}
+
+.footer-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-left {
+    p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #E5E5E5;
+    }
+}
+
+.foot-right {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF;
+
+        i {
+            margin-right: 8px;
+        }
+    }
+}

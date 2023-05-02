@@ -1,0 +1,106 @@
+@use "common" as *;
+
+.contact-area {
+
+    background: #1d1d1d;
+}
+
+.contact-layout {
+    border-bottom: 1px solid #BFBFBF;
+    padding-bottom: 87px;
+
+}
+
+.contact-item {
+    text-align: left;
+
+
+
+    h3 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 8px;
+
+            a {
+
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+                color: #BFBFBF;
+            }
+        }
+    }
+}
+
+.newsletter-side {
+    margin-bottom: 10px;
+
+    h3 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #BFBFBF;
+    }
+}
+
+.newsletter-form {
+    form {
+        width: 100%;
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 0.5px solid #BFBFBF;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: #BFBFBF;
+            opacity: 0.6;
+            padding-bottom: 6px;
+        }
+
+        button {
+            margin-top: 24px;
+            width: 100%;
+            padding: 14px 140.5px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 130px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+}

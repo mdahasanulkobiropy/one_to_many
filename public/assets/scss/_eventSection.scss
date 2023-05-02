@@ -1,0 +1,48 @@
+@use "common" as *;
+
+.event-area {
+    padding: 109px 0 150px 0;
+    background: #1d1d1d;
+
+    .event-content {
+        margin-top: 46px;
+        max-width: 500px;
+        width: 100%;
+
+        .event-content-title {
+            margin-bottom: 38px;
+
+            h2 {
+                font-family: 'Manrope', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 72px;
+                line-height: 76px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+        }
+
+        .event-content-sub-title {
+            margin-bottom: 32px;
+
+            p {
+                font-family: 'Manrope';
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+
+        .event-content-info {
+            p {
+                font-family: 'Manrope';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #BFBFBF;
+            }
+        }
+    }
+}
